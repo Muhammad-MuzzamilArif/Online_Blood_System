@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Blood Bank Management System </title>
+    <meta name="viewport" content="intial-scale=1.0, width=device-width">
+    <meta name="keyword" content="Blood Bank system">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="table.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">  -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+-->
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+   
+<style>
+    th{
+        text-transform:uppercase;
+        font-size:12px;
+        font-weight:bold;        
+    }
+    </style>
+
+</head>
+
+<body>
+
+ <!-- Navbar -->
+   <header class="navbar-fixed-top  ">
+        <nav class="navbar navbar-default navbar-inverse ">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cw-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href=""></a>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse custom_nav" id="cw-navbar">
+                    <ul id="nav" class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href=" index.html" class=" "> HOME </a></li>
+                        <li role="presentation"><a href=" donate.php" class=" "> DONATE </a></li>
+                        <li role="presentation"><a href=" order.php" class=" "> ORDERS </a></li>
+                        <li role="presentation"><a href=" request.php" class=" "> BLOOD REQUEST </a></li>
+                        <li role="presentation"><a href=" sevices.html" class=" "> SERVICES </a></li>
+                        <li role="presentation"><a href=" logout.php" class=" "> 
+<form action="logout.php" method="POST">
+<input class="btn btn-success" type="submit" value="logout">
+</form> </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li role="presentation"> <a href="first.html" class="btn btn-primary" style="color:white;"> TRIO BMS </a></li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+<!-- End Of Navbar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="donor" class="jumbotron">
+        <div class="container-fluid">
+        <p>
+            <br>
+            <center>
+                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#donorModal" data-whatever="@mdo"> 
+  DONORS REGISTER NOW            
+            </button> 
+            </center>
+</p>
+            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+...more buttons...
+-->
+            <div class="modal fade" id="donorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="exampleModalLabel"> Register Here</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="control-label"> Name: </label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-email" class="control-label"> Email: </label>
+                                    <input type="text" class="form-control" id="recipient-email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-age" class="control-label"> Age: </label>
+                                    <input type="text" class="form-control" id="recipient-age">
+                                </div>
+                                <div class="form-group">
+                            <label for="recipient-blood" class="control-label"> Name: </label>
+                            <input type="text" class="form-control" id="recipient-blood">
+                        </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="control-label">Address:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+   <!-- <div>
+        <table>
+            <tr>
+                <th> </th>
+            </tr>
+        </table>
+    </div>   -->
+    <div>
+        <!-- Bootstrap snippet -->
+<script>
+    /**
+*   I don't recommend using this plugin on large tables, I just wrote it to make the demo useable. It will work fine for smaller tables 
+*   but will likely encounter performance issues on larger tables.
+*
+*		<input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
+*		$(input-element).filterTable()
+*		
+*	The important attributes are 'data-action="filter"' and 'data-filters="#table-selector"'
+*/
+(function(){
+    'use strict';
+	var $ = jQuery;
+	$.fn.extend({
+		filterTable: function(){
+			return this.each(function(){
+				$(this).on('keyup', function(e){
+					$('.filterTable_no_results').remove();
+					var $this = $(this), 
+                        search = $this.val().toLowerCase(), 
+                        target = $this.attr('data-filters'), 
+                        $target = $(target), 
+                        $rows = $target.find('tbody tr');
+                        
+					if(search == '') {
+						$rows.show(); 
+					} else {
+						$rows.each(function(){
+							var $this = $(this);
+							$this.text().toLowerCase().indexOf(search) === -1 ? $this.hide() : $this.show();
+						})
+						if($target.find('tbody tr:visible').size() === 0) {
+							var col_count = $target.find('tr').first().find('td').size();
+							var no_results = $('<tr class="filterTable_no_results"><td colspan="'+col_count+'">No results found</td></tr>')
+							$target.find('tbody').append(no_results);
+						}
+					}
+				});
+			});
+		}
+	});
+	$('[data-action="filter"]').filterTable();
+})(jQuery);
+
+$(function(){
+    // attach table filter plugin to inputs
+	$('[data-action="filter"]').filterTable();
+	
+	$('.container').on('click', '.panel-heading span.filter', function(e){
+		var $this = $(this), 
+			$panel = $this.parents('.panel');
+		
+		$panel.find('.panel-body').slideToggle();
+		if($this.css('display') != 'none') {
+			$panel.find('.panel-body input').focus();
+		}
+	});
+	$('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+
+        <div class="container">
+        
+            <div  class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3  class="panel-title ">RESGISTERED DONORS</h3>
+                            <div class="pull-right">
+                                <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<i class="glyphicon glyphicon-filter"></i>
+							</span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers"
+                            />
+                        </div>
+                        <table class="table table-hover" id="dev-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Contact No. </th>
+                                    <th>Email</th>
+                                    <th>Age</th>
+                                    <th>Date of Birth</th>
+                                    <th>Gender</th>
+                                    <th>Blood Group</th>
+                                    <th>City</th>
+                                    <th>Any Disease</th>
+                                    <th>Registration ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Muhammad Muzzamil</td>
+                                    <td>03048242346</td>
+                                    <td>muzzamilarif12@yahoo.com</td>
+                                    <td>19</td>
+                                    <td>12-09-1996</td>
+                                    <td>Male</td>
+                                    <td>B+</td>
+                                    <td>Karachi</td>
+                                    <td>No Disease</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mirza Maaz</td>
+                                    <td>03048242346</td>
+                                    <td>mirza@yahoo.com</td>
+                                    <td>20</td>
+                                    <td>16-10-1996</td>
+                                    <td>Male</td>
+                                    <td>B+</td>
+                                    <td>Karachi</td>
+                                    <td>No Disease</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">New Donors</h3>
+                            <div class="pull-right">
+                                <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<i class="glyphicon glyphicon-filter"></i>
+							</span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <input type="text" class="form-control" id="task-table-filter" data-action="filter" data-filters="#task-table" placeholder="Filter Tasks"
+                            />
+                        </div>
+                        <table class="table table-hover" id="task-table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Assignee</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Site Wireframes</td>
+                                    <td>John Smith</td>
+                                    <td>in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mobile Landing Page</td>
+                                    <td>Kilgore Trout</td>
+                                    <td>completed</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Add SEO tags</td>
+                                    <td>Bob Loblaw</td>
+                                    <td>failed qa</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Migrate to Bootstrap 3</td>
+                                    <td>Emily Hoenikker</td>
+                                    <td>in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Update jQuery library</td>
+                                    <td>Holden Caulfield</td>
+                                    <td>deployed</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Issues in IE7</td>
+                                    <td>Jane Doe</td>
+                                    <td>failed qa</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Bugs from Sprint 14</td>
+                                    <td>Kilgore Trout</td>
+                                    <td>completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>

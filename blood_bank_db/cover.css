@@ -1,0 +1,248 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff; 
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+   /*
+   btn{
+  
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+    background: url(images/low_blood2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+ 
+}
+body {
+/*    
+ background: url(images/low_blood2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  */
+  position:relative;
+  color: white;    
+  text-shadow: 0 1px 2px rgba(0,0,0);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.2);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.2);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;   
+   text-align:center ;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fcfcfc;
+    text-shadow: 2px 1px 1px red;
+    display: inline-block;
+
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;  
+  
+}
+#logo:hover{
+        text-decoration:;
+        
+    }
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+  
+}
+.lead{
+    /*color: rgba(500,10,100,.9);*/
+    color: black;
+    font-weight: bolder;
+    margin:auto;
+    display: block;
+
+    margin-right: auto;
+    margin-left:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Courier Cambria, Cochin, Georgia, Times, Times New Roman, serif, Courier, monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+    padding-top: 10px;
+    margin: 0px auto 0px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  display: inline;
+  font-weight: 600px;
+  text-shadow: 1px 0px 1px red;
+  
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  text-align: right;
+ 
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+    
+  padding-right: 0;
+  padding-left: 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff ; /* IE8 proofing */
+  /* color: rgba(255,255,255);  */
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    font-size: 16px;
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: darkred;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: white;
+  font-size: 18px;
+  border-bottom-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: red;
+  /*background: red; */
+  color:white;
+}
+
+
+/*
+ * Footer
+ */
+
+.footerlink{
+    color: black;
+}
+
+.footerlink:hover
+{
+    color:red;
+    text-decoration: none;
+    font-size: 20px;
+}
+.mastfoot {
+    font-size: 16px;
+  color: #999; /* IE8 proofing */
+  color: black;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 0px;
+
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
