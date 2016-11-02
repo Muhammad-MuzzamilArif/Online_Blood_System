@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../bootstrap-3.3.7/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <style>
+    .col-md-4{
+     font-family:Times; 
+      padding:30px;
+      margin:0px;
+    }
+    html,body{
+      margin: 0px;
+      padding:30px;
+      width:100%;
+      height:100%;
+
+      }
+      .jumbotron{
+        padding:0px;
+        display:block;
+        padding-top:15px;
+        margin:5px;
+      }
+  
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+
+
+      
+    
+        
+    .masthead-brand {
+    padding-top: 0px;
+    margin:0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  display: inline;
+  font-weight: 600px;
+  font-size:20px;
+  
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  text-align: right;
+ 
+}
+
+nav > ul > li > a {
+  color: white;
+}
+
+    .slider{
+        width:75%;
+        margin: auto;
+       
+        padding:20px;
+    }
+    .carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+width:100%; /* use this, or not */
+margin: auto;
+}
+
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+
+
+</style>
+
+
+    <title>BBMS</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+  <!--
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">BBMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">FEATURES</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">VISIT OUR SITE</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          
+          <li><a href="#contact">CONTACT US</a></li></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">REGISTER NOW</a></li>
+            <li><a href="../navbar-static-top/">SIGN IN TODAY</a></li>
+          <!--  <li class="active"><a href="./"> <span class="sr-only">(current)</span></a></li> ->
+          </ul>
+        </div><!--/.nav-collapse ->
+      </div>
+    </nav>
+-->
+
+
+     <nav class="navbar navbar-fixed-top navbar-default ">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cw-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="../index.html">BBMS </a>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse custom_nav" id="cw-navbar">
+             <div class="navbar navbar-inverse">
+        <nav>
+  
+                    <ul id="nav" style="margin:0px;" class="nav nav-pills  pull-right masthead-nav ">
+                        <li role="presentation"><a href="main.html" class=" "> HOME </a></li>
+                        <li role="presentation"><a href="#about" class=" "> ABOUT </a></li>
+                        <li role="presentation"><a href="#features" class=" "> FEATURES</a></li>
+                        <li role="presentation"><a href="#contact"" class=" "> CONTACT US </a></li>
+              <!--          <li role="presentation"><a href="#stats" class=" "> STATISTICS </a></li>-->
+                      <li role="presentation"><a href=" ../login.php" > <!-- class="btn btn-sm btn-primary " --><span class="glyphicon glyphicon-user " > </span> LOGIN </a></li> -->
+                    </ul>
+                 <ul class="nav nav-pills  pull-left">
+          <li role="presentation" ><a class="masthead-brand" href="../index.html"><span class="glyphicon glyphicon-tint"> </span> BBMS </a></li></ul>
+        </nav> </div>
+    <!--  
+                </div>
+                <!-- /.navbar-collapse -->
+                       <!-- /.container-fluid -->
+        </nav>
+   
+
+
+  <!--
+        
+          <ul class="nav nav-pills  pull-right masthead-nav ">
+            <li role="presentation" class=""><a href="webapp/main">Home</a></li>
+            <li role="presentation" ><a href="about.html">About</a></li>
+            <li role="presentation" ><a href="features.html">Features</a></li>
+            <li role="presentation" ><a href="contact.html">Contact</a></li>
+            <li role="presentation" ><a href="login.php"><span class="glyphicon glyphicon-user " > </span> Login</a></li>
+        <li role="presentation" ><a href="login.php"><span class="glyphicon glyphicon-user " > </span> Register</a></li>
+          </ul>
+         <a  href="index.php" >  <h2 class="masthead-brand pull-left" id="logo">BBMS</h2>
+      </a> -</div>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="jumbotron" style="background:transparent !important" > -->
+
+<!-- Carousel From carousel.html -->
+ 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+ 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+ 
+
+<!-- Latest compiled and minified CSS -
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme --
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript --
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+-->
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+ 
+$('#carousel-example-generic').carousel({
+ 
+  interval: 1500
+ 
+})
+ 
+});
+ 
+</script>  
+
+
+<script>
+ 
+   $(function(){
+ 
+      // Initializes the carousel
+ 
+      $(".start-slide").click(function(){
+ 
+         $("#carousel-example-generic").carousel('cycle');
+ 
+      });
+ 
+      // Stops the carousel
+ 
+      $(".pause-slide").click(function(){
+ 
+         $("#carousel-example-generic").carousel('pause');
+ 
+      });
+ 
+      // Cycles to the previous item
+ 
+      $(".prev-slide").click(function(){
+ 
+         $("#carousel-example-generic").carousel('prev');
+ 
+      });
+ 
+      // Cycles to the next item
+ 
+      $(".next-slide").click(function(){
+ 
+         $("#carousel-example-generic").carousel('next');
+ 
+      });
+ 
+      // Cycles the carousel to a particular frame
+ 
+      $(".slide-one").click(function(){
+ 
+         $("#carousel-example-generic").carousel(0);
+ 
+      });
+ 
+      $(".slide-two").click(function(){
+ 
+         $("#carousel-example-generic").carousel(1);
+ 
+      });
+ 
+      $(".slide-three").click(function(){
+ 
+         $("#carousel-example-generic").carousel(2);
+ 
+      });
+ 
+   });
+ 
+</script>   
+ <div class="slider ">
+ 
+<h1></h1>
+ 
+<!--carousel section starts here -->
+ 
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Indicators -->
+ 
+  <ol class="carousel-indicators">
+ 
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+ 
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+ 
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+ 
+  </ol>
+ 
+  <!-- Wrapper for slides --> 
+ 
+  <div style="" class="carousel-inner "> 
+ 
+   
+    <div class="item active"> 
+ 
+      <img src="../images/btest.jpg" width=""  alt=""> 
+ 
+      <div class="carousel-caption" style="color:black">
+ 
+        <h2><span style="color: white"> <b> <em> Share A Little, Care A Little.</em></b></span> <br>Get Register to <b><em><span style="color:blue"> Save</span></em></b> Someone's Life.</h2> 
+ 
+        <p><button role="button" class="btn btn-lg btn-danger"   data-toggle="modal" data-target="#getblood">
+   
+ Register To Get Blood</button></p> 
+ 
+      </div> 
+ 
+    </div> 
+  <div class="item "> 
+ 
+      <img src="../images/life.png" alt="Donate"> 
+ 
+      <div class="carousel-caption"  style="color:black"> 
+ 
+        <h1><span style="color:white">Be Someone's Life Saviour</span></h1> 
+ 
+        <h4>Help Save someone's life,<span style="color:white"> DONATE BLOOD</span><br> Register as a Blood Donor Now.<br></h4>
+     <p>  <button role="button" class="btn btn-lg btn-bitbucket"   data-toggle="modal" data-target="#myModalHorizontal"> Register As Donor </button></a> </p> 
+ 
+      </div> 
+ 
+    </div> 
+ 
+    <div class="item"> 
+ 
+      <img src="../images/a.jpg" alt="..."> 
+ 
+      <div class="carousel-caption"> 
+ 
+        <h2 style="valign:top"> Are You the one who <span style="color:blue">NEEDS BLOOD...</span> </h2>
+        <h3> We Provide You the one you need </h3> <h3> <b> <em><span style="color:blue"> Send a Blood Request Now</span></em></b></h3> 
+ 
+        
+          <p><button role="button" class="btn btn-lg btn-success"   data-toggle="modal" data-target="#orderblood">
+      CREATE BLOOD ORDER    </button></p> 
+ 
+      </div> 
+ 
+    </div> 
+ 
+  </div> 
+ 
+  <!-- Controls -->
+ 
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+ 
+    <span class="glyphicon glyphicon-chevron-left"></span>
+ 
+  </a>
+ 
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+ 
+    <span class="glyphicon glyphicon-chevron-right"></span>
+ 
+  </a>
+ 
+   <!-- Controls buttons -->
+ <!--
+   <div style="text-align:center;">
+ 
+      <input type="button" value="Start">
+ 
+      <input type="button" value="Pause">
+ 
+      <input type="button" value="Previous">
+ 
+      <input type="button" value="Next">
+ 
+      <input type="button" value="Move 1">
+ 
+      <input type="button" value="Move 2">           
+ 
+      <input type="button" value="Move 3">
+ 
+   </div> 
+ -->
+</div>
+ 
+<!--carousel section ends here -->
+ 
+</div>
+ 
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title"  id="myModalLabel">
+                    REGISTER AS DONOR
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form action="../donor_form.php" class="form-horizontal" role="form">
+                  <div  class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputname">Name:</label>
+                    <div class="col-sm-10">
+                        <input autofocus type="text" class="form-control" 
+                        id="inputname" placeholder="Enter Full Name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputemail">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" 
+                        id="inputemail" placeholder="Enter Email"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputcontact">Contact No.</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputcontact" placeholder="Enter Contact No."/>
+                    </div>
+                  </div>
+              <!--    <div class="form-group">
+                      <label class="col-sm-2 control-label" >Gender: </label>
+                  <!--  <div class="col-sm-10">--
+                        <input type="radio" value="male" checked class="form-control" 
+                        id="inputgender" /> 
+                    Male:
+            <!-- <div class="col-sm-10">  --
+                        <input type="radio" value="female" class="form-control" 
+                        id="inputgender" />
+                     <label  class="col-sm-2 control-label"
+                              for="inputgender">Female:    </label>
+
+                    
+                  </div>-->
+  <div class="form-group"> <label class="col-sm-4"> Blood Group:</label> 
+  </div ><div>   <select class=" col-sm-4">             
+       <option  value="O+ve">O +ve</option>
+<option value="O-ve">O -ve</option><option value="A+ve">A +ve</option><option value="B+ve">B +ve</option><option value="AB+ve">AB +ve</option>
+<option value="B-ve">B -ve</option>
+   </select> 
+  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputdate">Date Of Birth:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" 
+                        id="inputdate" placeholder="Date Of Birth as DD/MM/YYYY"/>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputage">Age:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputage" placeholder=" Enter Age"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputcity">City:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputcity" placeholder=" Enter your City"/>
+                    </div>
+                  </div>
+                   
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputdis">Any Disease Earlier:</label>
+                    <div class="col-sm-10">
+                        <textarea id="inputdis" class="form-control" rows="5" cols="25" placeholder="Do you have any Disease earlier or right now please Enter"> 
+                            </textarea> 
+                                            </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Password:</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control"
+                            id="inputPassword3" placeholder="Password"/>
+                    </div>
+                  </div>
+          <!--        <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                            <input type="checkbox"/> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>  -->
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="register" name="register" class="btn btn-success"> Register</button>
+                    </div>
+                  </div>
+                </form>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Modal For 2nd button -->
+<div class="modal fade" id="getblood" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title "  id="myModalLabel">
+                    REQUEST TO GET BLOOD
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form action="../register_form.php" class="form-horizontal" role="form">
+                  <div  class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input1">Contact #:</label>
+                    <div class="col-sm-10">
+                        <input autofocus type="text" class="form-control" 
+                        id="input1" name="contact" placeholder="Cell Number"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input2">Blood Group:</label>
+                    <div class="col-sm-10">
+                        <input name="bloodgroup" type="email" class="form-control" 
+                        id="input2" placeholder="Enter Blood Group"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input3">Gender</label>
+                    <div class="col-sm-10">
+                      <div class="radio">
+      <label><input type="radio" name="gender" value="male">Male</label>
+    </div>
+    <div class="radio">
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+                    </div>
+                  </div>
+              <!--    <div class="form-group">
+                      <label class="col-sm-2 control-label" >Gender: </label>
+                  <!--  <div class="col-sm-10">--
+                        <input type="radio" value="male" checked class="form-control" 
+                        id="inputgender" /> 
+                    Male:
+            <!-- <div class="col-sm-10">  --
+                        <input type="radio" value="female" class="form-control" 
+                        id="inputgender" />
+                     <label  class="col-sm-2 control-label"
+                              for="inputgender">Female:    </label>
+
+                    
+                  </div>-->
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input4">Organization:</label>
+                    <div class="col-sm-10">
+                        <input name="organization" type="text" class="form-control" 
+                        id="input4" placeholder="Independent or from any Hospital"/>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input5">Why To Get Blood:</label>
+                    <div class="col-sm-10">
+                        <textarea name="response" cols="30" rows="6" placeholder=" Enter your views"> 
+                        </textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input6">City:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="input6" name="city"
+                     placeholder=" Enter your City"/>
+                    </div>
+                  </div>
+                   
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input7">Date:</label>
+                    <div class="col-sm-10">
+                       <input type="date" name="date"  class="form-control" id="input7" placeholder="Current Date"    >        </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="register" name="register" class="btn btn-success"> Register</button>
+                    </div>
+                  </div>
+                </form>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="orderblood" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title "  id="myModalLabel">
+                    CREATE BLOOD ORDER
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form action="../order_form.php" class="form-horizontal" role="form">
+                  <div  class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input1">Blood Group:</label>
+                    <div class="col-sm-10">
+                        <input autofocus type="text" class="form-control" 
+                        id="input1" name="bloodgroup" placeholder="Blood Group Needed"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="input2">No. Of Samples:</label>
+                    <div class="col-sm-10">
+                        <input name="nofunits" type="text" class="form-control" 
+                        id="input2" placeholder="How Many Units Required"/>
+                    </div>
+                  </div>
+            <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="register" name="order" class="btn btn-success">Order</button>
+                    </div>
+                  </div>
+                </form>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Modal --
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header --
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Modal title
+                </h4>
+            </div>
+            
+            <!-- Modal Body --
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" 
+                        id="inputEmail" placeholder="Email"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control"
+                            id="inputPassword3" placeholder="Password"/>
+                    </div>
+                  </div> -->
+          <!--        <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                            <input type="checkbox"/> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>  --
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+            <!-- Modal Footer --
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+</div></div> -->
+
+
+
+
+
+
+
+
+
+
+   <!-- Carousel --
+<div id="myCarousel" class="carousel contributors-carousel slide autoplay" data-ride="carousel">
+      <!-- Indicators --
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="../images/images.png"  class=" img-center" width=""  alt="First slide">
+          <div class="container">
+            <div class="contributor carousel-caption">
+              <h1 style="color:red"> Be Someone's life Saviour</h1>
+              <p> Share a little, Care a little, <code>DONATE BLOOD</code> <br> Register as a Blood Donor Now. </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Register Here</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="../images/donate.jpg" alt="DOnation">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="../images/bottles.jpg" alt="Blood Order">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+        </div><hr>
+<div id="about" class="jumbotron" style="background:transparent !important">
+      <!-- Three columns of text below the carousel -->
+     
+     <div class="container">
+ <section id="">
+     <p class="lead text-justify" style="color:darkblue;margin:auto; padding-top:0px; font-family:Georgia;">While about 38% of the population qualifies to give blood, according to Red Cross less then 10% are actually donating. Because of the constant need of blood and the fact that supply can be at alarming low levels more often then not, blood collecting organisations are trying to reach as many possible donors they can. In doing so through computing technologies we are here to ease this process.<br/><br/>
+      </section>
+        <div class="row">
+        <div class="text-justify center-block col-md-4 col-sm-12">
+         <img class=" img-responsive img-thumbnail center-block " src="../images/save.jpg" alt="Generic placeholder image" width="140" height="140"> 
+          <h2 class="text-center">Donate Now</h2>
+          <p class="text-center">“Donate your blood for a reason, let the reason to be life”
+</p>
+          <p><button role="button" class="btn btn-md btn-success"   data-toggle="modal" data-target="#myModalHorizontal">
+  
+ GET REGISTER  &raquo; </button></a></p>
+       </div><!-- /.col-lg-4 -->
+        <div class="text-justify center-block col-md-4 col-sm-12">
+          <img class=" img-responsive img-thumbnail center-block " src="../images/medical-services.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2 class="text-center">Blood Request</h2>
+          <p class=" text-center">“A single pint can save three lives, a gesture can create a million smiles” </p>
+          <p><a class="btn btn-primary btn-md" href="#" role="button">REQUEST US &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="text-justify center-block col-md-4 col-sm-12">
+       <img class=" img-responsive img-thumbnail center-block " src="../images/tech.jpg" alt="Generic placeholder image" width="170" height="250">
+       <br>      <h2 class="text-center">Learn More</h2>
+          <p class="text-center">“Anybody can save lives”
+</p><br>
+          <p><a class="btn btn-danger btn-md" href="#" role="button">VIEW DETAILS &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div>
+  </div>    
+</div>
+
+
+
+<!-- CONTACT FORM -->
+<div id="contact" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">CONTACT US</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-envelope bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-phone bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-pencil bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2  days." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg"> Send</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+
+</body>
+</html>
